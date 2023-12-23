@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+const pageTitle = "my Astroサイト";
 ---
 
 <html lang="en">
@@ -9,14 +10,14 @@ import Card from "../components/Card.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">ホーム</a>
     <a href="/about/">私について</a>
     <a href="/blog/">ブログ</a>
 
-    <h1>my Astro サイト</h1>
+    <h1>{pageTitle}</h1>
   </body>
 </html>
 

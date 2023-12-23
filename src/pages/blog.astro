@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+const pageTitle = "私のAstro学習ブログ";
 ---
 
 <html lang="en">
@@ -9,15 +10,18 @@ import Card from "../components/Card.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">ホーム</a>
     <a href="/about/">私について</a>
     <a href="/blog/">ブログ</a>
 
-    <h1>私のAstro学習ブログ</h1>
+    <h1>{pageTitle}</h1>
     <p>ここには、私がAstroを学んでいく旅の様子を投稿します。</p>
+    <a href="/posts/posts-1/">記事1</a>
+    <a href="/posts/posts-2/">記事2</a>
+    <a href="/posts/posts-3/">記事3</a>
   </body>
 </html>
 
