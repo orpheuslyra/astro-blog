@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import "../styles/global.css";
 const pageTitle = "my Astroサイト";
+const links = ["ホーム", "私について", "ブログ"];
 ---
 
 <html lang="en">
@@ -18,6 +20,10 @@ const pageTitle = "my Astroサイト";
     <a href="/blog/">ブログ</a>
 
     <h1>{pageTitle}</h1>
+    <h2>このサイトの紹介</h2>
+    <ul>
+      {links.map((link) => <li>{link}</li>)}
+    </ul>
   </body>
 </html>
 
